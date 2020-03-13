@@ -71,7 +71,7 @@ http://localhost:3000 경로에서 아래와 같은 화면이 나타나는지 �
 
 화면 상단의 선택 상자를 이용하면 재고 수량에 따른 상태를 선택하여 화면에 표시할 수 있습니다.
 
-![Marker Group](imags/marker-groups.png)
+![Marker Group](images/marker-groups.png)
 
 ## 3단계: 애플리케이션 배포 준비
 
