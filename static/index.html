@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KF94 공적 마스크 판매 정보</title>
+
+    <!-- leafletjs -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/> -->
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <!-- <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script> -->
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.3.3/dist/esri-leaflet.js"
+    integrity="sha512-cMQ5e58BDuu1pr9BQ/eGRn6HaR6Olh0ofcHFWe5XesdCITVuSBiBZZbhCijBe5ya238f/zMMRYIMIIg1jxv4sQ=="
+    crossorigin=""></script>
+    <!-- <script src="https://unpkg.com/esri-leaflet@2.1.4/dist/esri-leaflet.js"
+    integrity="sha512-m+BZ3OSlzGdYLqUBZt3u6eA0sH+Txdmq7cqA1u8/B2aTXviGMMLOfrKyiIW7181jbzZAY0u+3jWoiL61iLcTKQ=="
+    crossorigin=""></script> -->
+
+    <!-- Load Leaflet.awesome-markers -->
+    <link rel="stylesheet" href="js/lib/leaflet.awesome-markers/leaflet.awesome-markers.css">
+    <script src="js/lib/leaflet.awesome-markers/leaflet.awesome-markers.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            
+        });
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="title">
+            KF94 공적 마스크 판매 정보
+            <button type="button" onclick="home();" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>&nbsp; 현위치
+            </button>
+        </div>
+    </header>
+    <!-- <button onclick="scan();">Scan around</button> -->
+     <!-- Welcome -->
+    <div id="mapid">
+        <!-- Placehodler for map viewport -->
+    </div>
+    <div id="nameInput" class="input-group-lg center-block helloInput" style="display: none;">
+        <p class="lead" data-i18n="what_is_your_name"></p>
+        <input id="user_name" type="text" class="form-control" aria-describedby="sizing-addon1" value="" />
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span><a href="https://cloud.ibm.com/docs/tutorials" target="_blank">IBM Cloud 튜토리얼</a></span>
+            /
+            <span><a href="https://www.data.go.kr/dataset/15043025/openapi.do" target="_blank">한국 공공데이터 포털</a></span>
+            /
+            <span><a href="https://github.com/hongjsk/kf94maskmap" target="_blank">GitHub 소스코드</a></span>
+        </div>
+    </footer>
+
+    <script src="maskmap.js" type="text/javascript"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,5 @@
+---
+applications:
+ - name: kf94maskmap
+   random-route: true
+   memory: 64M

@@ -1,0 +1,48 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #f5f7fa;
+}
+.header .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.title button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #f5f7fa;
+}
+.helloInput {
+  width: 300px;
+}
+
+#mapid {
+  width: 100%;
+  height: 100%;
+}
+
+#mapid2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
