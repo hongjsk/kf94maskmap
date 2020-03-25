@@ -41,7 +41,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
         $( document ).ready(function() {
-            
+            USE_CURRENT_LOCATION = <%=USE_CURRENT_LOCATION %>
+            home()
         });
     </script>
 </head>
@@ -50,9 +51,11 @@
     <header class="header">
         <div class="title">
             KF94 공적 마스크 판매 정보
+            <% if (USE_CURRENT_LOCATION) { %>
             <button type="button" onclick="home();" class="btn btn-default btn-lg">
                 <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>&nbsp; 현위치
             </button>
+            <% } %>
         </div>
     </header>
     <!-- <button onclick="scan();">Scan around</button> -->

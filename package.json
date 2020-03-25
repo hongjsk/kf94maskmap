@@ -18,6 +18,7 @@
     "body-parser": "^1.17.x",
     "cfenv": "^1.0.x",
     "dotenv": "^4.0.0",
+    "ejs": "^3.0.1",
     "express": "^4.15.x"
   },
   "author": "IBM Corp",

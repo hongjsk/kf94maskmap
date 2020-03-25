@@ -93,6 +93,8 @@ this.map.on("zoomend", function(s) {
 
 
 function home() {
+  if (!USE_CURRENT_LOCATION) return
+
   navigator.geolocation.getCurrentPosition(function (location) {
     latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
     map.setView(latlng)
@@ -199,5 +201,3 @@ function scan(area) {
     }
   });
 }
-
-home()
