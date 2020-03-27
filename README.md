@@ -7,6 +7,10 @@
 
 * https://kf94maskmap.au-syd.cf.appdomain.cloud/
 
+## 구성
+
+![Architecture Diagram](images/arch-diagram.png)
+
 ## 사전 준비 사항
 
 * IBM Cloud 계정 (https://cloud.ibm.com/registration)
