@@ -1,7 +1,10 @@
 # KF94 Mask Map
+
+*다른 언어로 보기: [English](README-en.md).*
+
 이 애플리케이션은 Node.js 를 기반으로 작성된 KF94 마스크 조회 애플리케이션 예제입니다. IBM Cloud Lite 계정을 이용하면 무료로 256MB 메모리의 Cloud Foundry 계정과 주요 서비스를 별도 과금없이 사용 할 수 있습니다. 관련 부분은 [IBM Cloud Lite 계정 정보](https://www.ibm.com/kr-ko/cloud/lite-account)를 참고 하세요.
 
-## Demo
+## 데모
 
 다음 링크를 클릭하면 실행 중인 서비스를 확인 할 수 있습니다.
 
@@ -79,7 +82,7 @@ http://localhost:3000 경로에서 아래와 같은 화면이 나타나는지 �
 
 ## 3단계: 애플리케이션 배포 준비
 
-개인 PC에서 정상적으로 실행되는 것을 확인했다면 IBM Cloud에 배포할 준비를 하니다. 이 애플리케이션은 IBM Cloud의 PaaS 플랫폼인 Cloud Foundry에 배포가 가능합니다. 디렉토리에 있는 `manifest.yml` 파일을 열어 정보를 확인 합니다.
+개인 PC에서 정상적으로 실행되는 것을 확인했다면 IBM Cloud에 배포할 준비를 합니다. 이 애플리케이션은 IBM Cloud의 PaaS 플랫폼인 Cloud Foundry에 배포가 가능합니다. 디렉토리에 있는 `manifest.yml` 파일을 열어 정보를 확인 합니다.
 
 ``` yaml
 ---
