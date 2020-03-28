@@ -2,13 +2,13 @@
 
 *Read this in other languages: [한국어](README.md).*
 
-This application shows the number of stock of KF94 masks near you by using web browser and GPS in South Korea. It is running on Node.js runtime and served on IBM Cloud. It works as web application so that you can get the masks with this application easily without any addition installation of application on you smart phone. It is very simple but straight forward to get the information you need.
+This application shows the number of stock of KF94 masks near you by using web browser and GPS in South Korea. It is running on Node.js runtime and served on IBM Cloud. It works as web application so that you can get the masks with this application easily without any addition installation of application on your smart phone. It is very simple but straight forward to get the information you need.
 
 You can try build and deploy this application on IBM Cloud with resources free of charge. The resources are limited but enough to serve this application. Check [IBM Cloud Lite Account](https://www.ibm.com/kr-ko/cloud/lite-account) for more information.
 
 ## Demo
 
-You can see the demo application with URL below.
+You can see the demo application at this URL below.
 
 * https://kf94maskmap.au-syd.cf.appdomain.cloud/
 
@@ -33,7 +33,7 @@ git clone https://github.com/hongjsk/kf94maskmap.git
 
 ## Step 2: Run the application on your PC
 
-If it was cloned to your PC, you can see the `kf94maskmap` directory under your current directory. Let's navigate to the project directory and instal the required packages.
+If it is successfully cloned on your PC, you can see the `kf94maskmap` directory under your current directory. Let's navigate to the project directory and install the required packages.
 
 ### Navigate directory
 
@@ -74,7 +74,7 @@ And the click any location on the map with your mouse. The application shows mar
 
 ![Markers with legend](images/markers-with-legend.png)
 
-When you click the marker on the map then the popped out the detail information of the number of stock, time of in-stock, last updated time, store name and its address.
+When you click the marker on the map, the dialog will be displayed that contains the information about the number of stock, time of in-stock, last updated time, store name and its address.
 
 ![Marker Selected](images/marker-selected.png)
 
@@ -84,7 +84,7 @@ Of course, you can filter the markers by selecting options in the legend layer b
 
 ## Step 3: Ready to deploy the application
 
-You might saw the application went well on your PC. Now let get ready to deploy it to the real world through IBM Cloud. This application can be deployed IBM Cloud Foundry Platform. Of course it can be deployed to either IBM Kubernetes Cluster or OpenShift Cluster too. But not this time. Cloud Foudry is easier than those platform for beginner. 
+You might saw the application went well on your PC. Now let get ready to deploy it to the real world through IBM Cloud. This application can be deployed IBM Cloud Foundry Platform. Of course it can be deployed to either IBM Kubernetes Cluster or OpenShift Cluster too. But not this time. For beginners, Cloud Foudry is easier than those platforms.
 
 Now open the `manifest.yml` file in the project directory with your favorite text editor.
 
@@ -96,11 +96,11 @@ applications:
    memory: 64M
 ```
 
-`kf94maskmap` is application's name and the route path is random but `kf94maskmap` is included. If you want to change the name, replace the `name` property's value with you want.
+`kf94maskmap` is application's name and the route containing this name is randomly assigned. If you want to change the name, replace the `name` property's value with what you want.
 
 ## Step 4: Deploy the application
 
-Now we just stepped toward to cloud journey.
+Now, we are going to take the first step towards the cloud journey.
 
 ### Login to IBM Cloud
 
@@ -110,7 +110,7 @@ In the command line terminal, login to IBM Cloud.
 ibmcloud login
 ```
 
-Note. If you are federation account, you should add `--sso` option to get the onetime password token from your web browser.
+**Note.** If you are federation account, you should add `--sso` option to get the one-time password token from your web browser.
 
 ``` bash
 ibmcloud login --sso
@@ -125,10 +125,10 @@ ibmcloud target --cf
 If you don't have any Cloud Foundry Organization or Workspace, please login IBM Cloud Dash board in your web browser.
 
 * Select `Manage` > `Account` in the menu on top right of the screen
-* Step into the `Account Resource > Cloud Foundry Organization`
+* Step into the `Account resource > Cloud Foundry orgs`
 * Click the `Create` button
 
-If you have already the Organization then just click the organization link to enter the `Workspaces`. Otherwise, just click `Create workspace` button.
+If you have already the Organization then just click the organization link to enter the `Spaces`. Otherwise, just click `Add a space` button.
 
 Please check [this](https://cloud.ibm.com/docs/account?topic=account-orgsspacesusers)  for more information.
 
