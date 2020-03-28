@@ -2,7 +2,7 @@
 
 *Read this in other languages: [한국어](README.md).*
 
-This application is shows the number of stock of KF94 masks near you by using web browser and GPS in South Korea. It is running on Node.js runtime and served on IBM Cloud. It works as web application so that you can get the masks with this application easily without any addition installation of application on you smart phone. It is very simple but straight forward to get the information you need.
+This application shows the number of stock of KF94 masks near you by using web browser and GPS in South Korea. It is running on Node.js runtime and served on IBM Cloud. It works as web application so that you can get the masks with this application easily without any addition installation of application on you smart phone. It is very simple but straight forward to get the information you need.
 
 You can try build and deploy this application on IBM Cloud with resources free of charge. The resources are limited but enough to serve this application. Check [IBM Cloud Lite Account](https://www.ibm.com/kr-ko/cloud/lite-account) for more information.
 
