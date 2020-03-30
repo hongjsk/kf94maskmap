@@ -110,7 +110,7 @@ In the command line terminal, login to IBM Cloud.
 ibmcloud login
 ```
 
-**Note.** If you are federation account, you should add `--sso` option to get the one-time password token from your web browser.
+**Note.** If you are using the federation account, you should add `--sso` option to get the one-time password token from your web browser.
 
 ``` bash
 ibmcloud login --sso
