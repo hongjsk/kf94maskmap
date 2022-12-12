@@ -19,7 +19,7 @@
     "cfenv": "^1.0.x",
     "dotenv": "^4.0.0",
     "ejs": "^3.0.1",
-    "express": "^4.15.x"
+    "express": "^4.17.x"
   },
   "author": "IBM Corp",
   "license": "Apache-2.0"
